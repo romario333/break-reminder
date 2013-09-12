@@ -1,0 +1,20 @@
+{
+    "manifest_version": 2,
+    "name": "Break Reminder",
+    "description": "TODO",
+    "version": "0.0.0",
+    "permissions": [
+        "notifications"
+    ],
+    // Note: Because of bug 134315, you must declare any images you
+    // want to use with createNotification() as a web accessible resource.
+    "web_accessible_resources": [
+        "calculator-16.png"
+    ],    
+    "app": {
+        "background": {
+            "scripts": ["background.js"]
+        }
+    },
+    "icons": { "16": "calculator-16.png", "128": "calculator-128.png" }
+}
