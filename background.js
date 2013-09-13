@@ -10,8 +10,11 @@ chrome.app.runtime.onLaunched.addListener(function() {
         type: 'basic',
         title: 'Primary title',
         message: 'message',
-        iconUrl: 'calculator-16.png'
-    }, function done() {
+        buttons: [
+            {title: 'Later', iconUrl: 'calculator-16.png'}
+        ],
+        iconUrl: 'calculator-16.png',
+    }, function () {
         console.log('done');
     });
 });
